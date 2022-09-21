@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Kuis 1</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+    <h2>Pekan Olahraga dan Guru Seni TKA/TPA</h2>
+    <h2>Tahun 2020</h2>
+    <form name="formKuis" onsubmit="return validateForm()" method="post" required>
+        <label for="nama">Nama Peserta</label><br> 
+        <input type="text" id="nama" name="nama"><br>
+        <label for="date">Tempat Tanggal Lahir</label><br> 
+        <input type="text" id="date name="date"><br>
+        <label for="utusan">Utusan Unit TKA/KPA</label><br> 
+        <input type="text" id="utusan" name="utusan"><br>
+        <label for="kelurahanDesa">Kelurahan/Desa</label><br> 
+        <input type="text" id="kelurahanDesa" name="kelurahanDesa"><br>
+        <label for="kecamatan">Kecamatan</label><br> 
+        <input type="text" id="kecamatan" name="kecamatan"><br>
+        <label for="nomorTelepon">Nomor Telepon</label><br> 
+        <input type="text" id="nomorTelepon" name="nomorTelepon"><br>
+        
+        <p>Jenis Lomba</p>
+
+        <input type="radio" id="tarikTambang" name="tarikTambang" value="tarikTambang">
+        <label for="tarikTambang">Tarik Tambang (4 Perempuan + 1 Laki = 5 orang)</label><br>
+        <input type="radio" id="estafet" name="estafet" value="estafet">
+        <label for="estafet">Lari Estafet (4 Perempuan)</label><br>
+        <input type="radio" id="gobakSodor" name="gobakSodor" value="gobakSodor">
+        <label for="gobakSodor">Gobak Sodor (4 Perempuan)</label><br>
+        <input type="radio" id="tartil" name="tartil" value="tartil">
+        <label for="tartil">Tartil (1 orang perwakilan TKA/TPA)</label><br>
+        <input type="radio" id="ceramah" name="ceramah" value="ceramah">
+        <label for="ceramah">Ceramah (1 orang perwakilan TKA/TPA)</label><br>
+        
+        <p><i>Ket: Lingkari jenis lomba yang dipilih</i></p>
+        <!-- spasinya nggak pas kalau nggak ditaruh <p>-->
+       
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
